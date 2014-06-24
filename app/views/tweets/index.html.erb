@@ -1,1 +1,8 @@
 <h1>Tweets!</h1>
+
+<%= form_tag search_tweets_path, remote: true do |f|%>
+  Username: <%= text_field_tag :username %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<div class="tweets"></div>

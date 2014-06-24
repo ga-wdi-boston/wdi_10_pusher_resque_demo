@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root: 'tweets#index'
+  root to: 'tweets#index'
+  post '/tweets/search', to: 'tweets#search', as: 'search_tweets'
 end
